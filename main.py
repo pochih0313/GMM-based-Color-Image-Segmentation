@@ -1,7 +1,7 @@
 # %%
-import joblib
 import numpy as np
 import cv2
+import joblib
 from sklearn.mixture import GaussianMixture as GMM
 from matplotlib import pyplot as plt
 
