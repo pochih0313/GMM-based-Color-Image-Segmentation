@@ -5,3 +5,5 @@ python 3.9.1
 pip install -r requirements.txt
 ## Run
 python main.py
+## GMM model selection
+* BIC (Bayesian Information Criterion)
