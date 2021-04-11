@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 
 n = 1 # figure index
 
-def prediction(model, test_data, shape):
+def prediction(model, test_data, shape, name):
     global n
     plt.figure(n)
     n += 1
@@ -16,6 +16,7 @@ def prediction(model, test_data, shape):
 
     print('segmentation result')
     plt.imshow(result)
+    plt.savefig(name)
     plt.show()
 
     return labels
@@ -68,8 +69,8 @@ if __name__ == '__main__':
     shape = img_soccer1.shape
     
     mask1 = mask_soccer1.reshape(-1)
-    labels1 = prediction(model1, test_image, shape)
-    find_pixel_accuracy(labels1, mask1, shape, str(1))
+    labels1 = prediction(model1, test_image, shape, 'segment_1')
+    find_pixel_accuracy(labels1, mask1, shape, 'result_1')
 # %% Scenario2
     print("Scenario2:")
     
@@ -77,24 +78,24 @@ if __name__ == '__main__':
     shape = img_soccer2.shape
 
     mask2 = mask_soccer2.reshape(-1)
-    labels2 = prediction(model1, test_image, shape)
-    find_pixel_accuracy(labels2, mask2, shape, str(2))
+    labels2 = prediction(model1, test_image, shape, 'segment_2')
+    find_pixel_accuracy(labels2, mask2, shape, 'result_2')
 # %% Scenario3-1
     print("Scenario3-soccer1:")
 
     test_image = img_soccer1.reshape((-1,3))
     shape = img_soccer1.shape
     
-    labels3_1 = prediction(model2, test_image, shape)
-    find_pixel_accuracy(labels3_1, mask1, shape, '3-1')
+    labels3_1 = prediction(model2, test_image, shape, 'segment_3-1')
+    find_pixel_accuracy(labels3_1, mask1, shape, 'result_3-1')
 # %% Scenario3-2
     print("Scenario3-soccer2:")
     
     test_image = img_soccer2.reshape((-1,3))
     shape = img_soccer2.shape
     
-    labels3_2 = prediction(model2, test_image, shape)
-    find_pixel_accuracy(labels3_2, mask2, shape, '3-2')
+    labels3_2 = prediction(model2, test_image, shape, 'segment_3-2')
+    find_pixel_accuracy(labels3_2, mask2, shape, 'result_3-2')
 
 # %%
 # def prediction(model_1, model_0, test_data, shape):
