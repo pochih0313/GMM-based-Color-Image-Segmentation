@@ -29,38 +29,38 @@ python main.py
 ### Model2(M2): n_component='2', covariance_type='full'
 ![BIC2](./BIC_2.jpg)
 ### Segmentation Result with different numbers of n_component (M1)
-* original image
+* original image  
 ![origin](./soccer1.jpg)
-* n_component='2'
+* n_component = '2'  
 ![Segment1](./segment_1.png)
-* n_component='9'
+* n_component = '9'  
 ![Segment_1_test](./segment_1_test.png)
 
 ## Results
 ### Scenario1
-Segmentation
-![Segment1](./segment_1.png)
-Pixel Detection
-![Result1](./result_1.png)
+Segmentation  
+![Segment1](./segment_1.png)  
+Pixel Detection  
+![Result1](./result_1.png)  
 * pixel accuracy = 0.9709
 ### Scenario2
-Segmentation
-![Segment2](./segment_2.png)
-Pixel Detection
-![Result2](./result_2.png)
+Segmentation  
+![Segment2](./segment_2.png)  
+Pixel Detection  
+![Result2](./result_2.png)  
 * pixel accuracy = 0.5992
 ### Scenario3
 #### Soccer1
-Segmentation
-![Segment3-1](./segment_3-1.png)
-Pixel Detection
-![Result3-1](./result_3-1.png)
+Segmentation  
+![Segment3-1](./segment_3-1.png)  
+Pixel Detection  
+![Result3-1](./result_3-1.png)  
 * pixel accuracy = 0.9749
 #### Soccer2
-Segmentation
-![Segment3-2](./segment_3-2.png)
-Pixel Detection
-![Result3-2](./result_3-2.png)
+Segmentation  
+![Segment3-2](./segment_3-2.png)  
+Pixel Detection  
+![Result3-2](./result_3-2.png)  
 * pixel accuracy = 0.9117
 
 ### Performance Evaluation
