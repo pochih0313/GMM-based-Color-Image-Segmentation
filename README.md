@@ -23,7 +23,7 @@ python main.py
 ```
 
 ## GMM model selection: BIC (Bayesian Information Criterion)
-* 目標是選擇最佳模型的component數量以及covariance類型，方法為盡量挑選BIC值較低的，但因為兩個模型的BIC值在component數量大於2之後變化不大，為了避免模型過度擬合，所以選擇較為精簡的模型（2components)。
+* 目標是選擇最佳模型的component數量以及covariance類型，方法為盡量挑選BIC值較低的，但因為兩個模型的BIC值在component數量大於2之後變化不大，為了避免模型過度擬合，所以選擇較為精簡的模型（2 components)。
 ### Model1(M1): n_component='2', covariance_type='full'
 ![BIC1](./BIC_1.jpg)
 ### Model2(M2): n_component='2', covariance_type='full'
